@@ -1,0 +1,6 @@
+# Which part of this is no-nonsense anyway?
+Have you *seen* the current state of front-end web development? Back in the old days you can just spend a few days looking up JavaScript, and then you can impress your friends. These days beginner web devs will only be able to walk two steps before stumbling at the word `npm` and then just fall into months of learning it without making a single web page.
+
+This guide is "no-nonsense" in that "I'm just going to teach you the basic, the simplest possible". Afterwards, you can make a simple website that'll look pretty  nice. Hopefully, when you want dive deeper, that knowledge can help you find your way. 
+
+It's also "no-nonsense" in that "I'm not going to hold your hand too much". I don't like it when a tutorial goes too deep into a thing, or take too long getting basic concepts down with too many examples. I try my best to keep this guide understandable, but I also won't be surprised it its readers will also Alt+Tab to Google and Stack Overflow-em-up. I think that's just part of the learning process, and that's fine. Us self-taught people gotta self-taught, y'know?

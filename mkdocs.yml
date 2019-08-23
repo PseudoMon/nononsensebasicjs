@@ -1,0 +1,14 @@
+site_name: The No-Nonsense Basic JavaScript Guide for the Novice Web Developer
+site_author: Aliya N. Anindita
+theme: readthedocs
+nav:
+    - Home: 'index.md'
+    - The Guide:
+        - "Basic Concepts": 'js-concept.md'
+        - "Inserting JavaScript": 'inserting-js.md'
+        - "Getting and Manipulating Elements": 'get-set.md'
+        - "Events": 'events.md'
+    - Appendix:
+        - "Really Quick Guide to Programming with JavaScript": 'js-quickguide.md'
+        - "Which part of this is no-nonsense anyway?": "whatnononsense.md"
+    
