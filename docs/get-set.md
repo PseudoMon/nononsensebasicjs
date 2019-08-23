@@ -91,9 +91,9 @@ console.log(document.getElementById("inputthing").value)
 This will also work for other types of input like checkboxes, and also for `<option>` of a `<select>`. [Here](https://www.w3schools.com/html/html_form_input_types.asp)is the reference page for input types, and [here](https://www.w3schools.com/tags/tag_select.asp) is for selectable. 
 
 ### Other Attributes
-Attributes are those things you put inside the tag like `src` and `href` and `id`. Some attributes, like `value` and `style` can be accessed like I showed you above. 
+Attributes are those things you put inside the tag like `src` and `href` and `id`. Some attributes, like `value` and `style` can be accessed like I showed you above. Another attribute you can access directly is `class`, which you can access with `element.className`. 
 
-Use the `getAttribute()` function.
+For everything else, use the `getAttribute()` function.
 
 ```html
 <a id="my-link" href="http://github.com">Click</a>

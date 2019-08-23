@@ -8,6 +8,11 @@ nav:
         - "Inserting JavaScript": 'inserting-js.md'
         - "Getting and Manipulating Elements": 'get-set.md'
         - "Events": 'events.md'
+        - "Form Shenanigans": 'handling-forms.md'
+        - "Animating with Transition": 'transition.md'
+        - "Timing": 'timing.md'
+        - "Frameworks and Libraries": 'frameworks.md'
+        - "Afterwords": 'thatsall.md'
     - Appendix:
         - "Really Quick Guide to Programming with JavaScript": 'js-quickguide.md'
         - "Which part of this is no-nonsense anyway?": "whatnononsense.md"

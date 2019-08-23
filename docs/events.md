@@ -159,9 +159,11 @@ function textboxChanged(box) {
 </script>
 ```
 
-In the above example, `this` refers to the textbox. I then hand that over to the function, renaming it to `box`. Renaming it is just to be safe since `this`  can mean something else here. Feel free to name it whatever else you like.
+In the above example, `this` refers to the textbox element. I then hand that over to the function, renaming it to `box` in the process. Renaming it is just a precaution since `this`  can mean something else here. Feel free to name it whatever else you like.
 
 You can then treat that variable as if we **Get** that element through `getElementById()`. You can access and set everything (`style`, `innerHTML`, attributes) the same way as before.
+
+(For more about `this`, you can just google "js this". [This W3Schools page](https://www.w3schools.com/js/js_this.asp) has a pretty good explanation.)
 
 ## Adding Event Handlers Straight from the Script
 In addition to adding an event handler as attributes to the element, you can also add them using the function `addEventListener()`. 
@@ -190,9 +192,9 @@ button.addEventListener('click', clickme)
 </script>
 ```
 
-You see that? Basically it works like this: *element*.addEventListener(*event*, *function*)
+You see that? Its basic syntax is this: ***element*.addEventListener(*event*, *function*)**
 
-There's one crucial difference, however: event handlers created through `addEventListener()` always receive an **event** object. This **event** object contains various data about the event itself; the parts you should remember for now are `preventDefault()` and `target`.
+There's one crucial difference, however: event handlers created through `addEventListener()` can receive an **event** object. This **event** object contains various data about the event itself; the parts you should remember for now are `preventDefault()` and `target`.
 
 The event's `target` is the element that the event is attached to, similar to how you'd use `this`. Look at the two examples below. They work identically.
 
@@ -217,7 +219,7 @@ button.addEventListener('click', clickme)
 </script>
 ```
 
-`preventDefault()` prevents the default behaviour of the element (duh). This is most useful when dealing with clicks on buttons and when submitting forms. By default, clicking a button [TODO: Citation needed] or submitting a form will reload the page. Using `preventDefault()` will stop that from happening.
+`preventDefault()` prevents the default behaviour of the element. This is mostly used when dealing with forms. By default, submitting a form will reload the page. Using `preventDefault()` will stop that from happening.
 
 ```js
 function dontReload(event) {
@@ -225,3 +227,10 @@ function dontReload(event) {
 }
 document.getElementById("someform").addEventListener('submit', dontReload)
 ```
+
+## Recap
+Did you get all that? Do you know how to **get** elements and **set** its attributes? Do you know what **events** are, how they work, and how to handle them? If you do, congrats, you know 90% of basic DOM manipulation with JavaScript.
+
+If you don't, scroll back up, read some more, do some practices!
+
+The next couple of pages will tell you some other simple ways you can work with JavaScript. While not *essential*, per se, they're very good to know if you want to dive further into web development. 
