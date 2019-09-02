@@ -14,6 +14,7 @@ nav:
         - "Frameworks and Libraries": 'frameworks.md'
         - "Afterwords": 'thatsall.md'
     - Appendix:
-        - "Really Quick Guide to Programming with JavaScript": 'js-quickguide.md'
         - "Which part of this is no-nonsense anyway?": "whatnononsense.md"
+        - "Really Quick Guide to Programming with JavaScript": 'js-quickguide.md'
+        - "Guestbook": 'guestbook.md'
     

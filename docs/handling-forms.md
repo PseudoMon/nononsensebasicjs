@@ -25,7 +25,9 @@ function afterSubmit(e) {
 	var selectable = e.target.selectable //and here
 	alert("You entered " + textinput.value + " and you selected the " + selectable.value + " option.") 
 }
+
 var form = document.getElementById('example-form')
+
 form.addEventListener('submit', afterSubmit)
 ```
 
@@ -49,7 +51,7 @@ var form = document.getElementById('example-form')
 form.addEventListener('submit', afterSubmit)
 </script>
 
-It only use `getElementById()` once, to **get** the form. Everything else is easily accessible through that form with `name`s.
+It only use `getElementById()` once, to **get** the form. Everything else is easily accessible through that form with the inputs' `name`s.
 
 In fact, when trying to **get** forms, you don't even have to use its ID. If you give the form a `name`, say, like this: `<form name="someform">`, you can then access it through `document.form.someform`.
 

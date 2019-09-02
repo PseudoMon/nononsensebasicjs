@@ -43,3 +43,5 @@ You can also use `document.onload` instead of `window.onload`. They do more or l
 There are many online services that let you try out JavaScript on your browser without having to mess around with files. My personal favourite is [CodePen](https://codepen.io/), but there's also [JSFiddle](https://jsfiddle.net/) and probably others.
 
 While they're good for experimenting or for sharing your code with other people, you should also get used to attaching your own HTML, CSS, and JS files together.
+
+You can also use your browser's Developer Tools to experiment. You can usually open it by pressing F12 or by right-clicking -> inspect element. 

@@ -39,7 +39,7 @@ You're going to use that Developer Tools *a lot* in web development, so you shou
 
 **DOM** is short for Document Object Model, but it's easier to think of it as The Things You See On-Screen. When we say we "manipulate the DOM", it means we're changing what's being shown on-screen.
 
-<div class="example-box" id="divtochange">Try clicking the button</div>
+<div style="border: solid 1px; display: inline-block; padding: 0.5em 1em;" class="example-box" id="divtochange">Try clicking the button</div>
 
 <button style="margin-top: 1em;" class="example-button" onclick="changeDiv()">Click me</button>
 
@@ -62,7 +62,7 @@ That's the thing that Javscript on the web do. It modifies the base HTML and CSS
 
 Remember, JavaScript is ran by your browser. It only changes how the website looks on *your* browser, not the **source**. The base HTML and CSS files in the server is unaffected.
 
-## The Three Concepts Redux
+## The Three Concepts Again
 
 1. JavaScript is a programming language
 2. JavaScript is ran by the browser

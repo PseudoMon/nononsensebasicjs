@@ -1,8 +1,6 @@
 # Events
 
-Alright, this is probably the #1 thing JavaScript is used for. **Event** refers to whatever happens on the webpage, usually through user interaction. When a button is clicked, when you type into a text field, when the page is loaded: those are all events. You can write JavaScript to make your webpage react to any of these events.
-
-This is gonna be long, so buckle up.
+This is probably the #1 thing JavaScript is used for. **Event** refers to whatever happens on the webpage, usually through user interaction. When a button is clicked, when you type into a text field, when the page is loaded: those are all events. You can write JavaScript to make your webpage react to any of these events.
 
 ## Reacting to Events
 
@@ -64,10 +62,10 @@ You've seen what **click** is. **Change** is pretty self-explanatory: for exampl
 <option>Option 2</option>
 </select>
 
-```js
+```html
 <select onchange="alert('You chose a different option!')">
-<option>Option 1</option>
-<option>Option 2</option>
+	<option>Option 1</option>
+	<option>Option 2</option>
 </select>
 ```
 
@@ -120,18 +118,20 @@ Don't worry about that `this` and `box` thing yet. I'll go there in a bit.
 **Load** is when the page is loaded. You've actually seen it in before when we use `window.onload` to insert Javascript 
 into the page.
 
-**Focus** is when the element is currently selected. When you click on a textbox and you can type into it, when you click Tab to then highlight a button or a link, that's when those elements are **focused**. When you stop focusing on it, **blur** happens.
+**Focus** is when the element is currently selected. When you click on a textbox and you can type into it, or when you click Tab to then highlight a button or a link, that's when those elements are **focused**. When you stop focusing on it, **blur** happens.
 
-**Mouseover** and **mouseout** should be self-explanatory. But remember that these days, most people browse the internet though their phone using a touchscreen. Mouse events are useless there.
+**Mouseover** and **mouseout** are when the mouse's cursor hover over or leave the area. But remember that these days, most people browse the internet though their phone using a touchscreen. Mouse events are useless there.
 
 **Submit** is when you submit a form. We'll go over that when we talk about Forms later.
 
 For a list of all events, see [this page on W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp).
 
 ## Accessing Elements in Events
-It's often useful to have direct access to the element that fired the event when we're reacting to it. In my above example for **onchange** and **oninput**, I give the function the argument `this`.
+When an event happens, it's often useful to have direct access to the element it's associated with. In my above example for **onchange** and **oninput**, I give the function the argument `this`.
 
 You'll learn more about `this` the more you learn about Javascript. For now, think of `this` as a special variable that refers to "the thing itself". Every element has a `this`, and when you give it to a function that it's attached to, you're letting that function access the element.
+
+See the example below:
 
 <input type="text" oninput="smolboxChanged(this)">
 </input>
@@ -192,9 +192,9 @@ button.addEventListener('click', clickme)
 </script>
 ```
 
-You see that? Its basic syntax is this: ***element*.addEventListener(*event*, *function*)**
+The basic syntax for creating an event handler is ***element*.addEventListener(*event*, *function*)**
 
-There's one crucial difference, however: event handlers created through `addEventListener()` can receive an **event** object. This **event** object contains various data about the event itself; the parts you should remember for now are `preventDefault()` and `target`.
+There's one crucial difference, however: event handlers created through `addEventListener()` can receive an **event** object. This **event** object contains various data about the event itself. The important parts of this object are `preventDefault()` and `target`.
 
 The event's `target` is the element that the event is attached to, similar to how you'd use `this`. Look at the two examples below. They work identically.
 
@@ -233,4 +233,4 @@ Did you get all that? Do you know how to **get** elements and **set** its attrib
 
 If you don't, scroll back up, read some more, do some practices!
 
-The next couple of pages will tell you some other simple ways you can work with JavaScript. While not *essential*, per se, they're very good to know if you want to dive further into web development. 
+The next couple of pages aren't as *essential*, per se, but they're very good to know if you want to dive further into web development. 

@@ -30,9 +30,9 @@ x.innerHTML = "Hello this text has been modified!"
 
 (friendly reminder that you can put these codes into [CodePen](https://codepen.io) to see it in action)
 
-This script will first read the div with the id `textdiv` and outputs its content: "Hello this is a text!" to the console. It will then change the content of that div to "Hello this text has been modified". This happens very quickly, so you wouldn't notice the div before it's modified.  
+This script will first read the div with the id `textdiv` and outputs its content: "Hello this is a text!" to the console. It will then change the content of that div to "Hello this text has been modified". This happens very quickly, so you won't be able to see the div before it's modified.  
 
-Note that we put the element we're reaching into the variable `x`. This helps us access that element again without having to type out that annoyingly long `getElement` function. 
+Note that we put the element we're reaching into the variable `x`. This helps us access that element again without having to type out the long `getElement` function again. 
 
 If you want to modify its content, don't put `document.getElementById(...).innerHTML` inside a variable. This will not work:
 
@@ -77,12 +77,13 @@ x.style.lineHeight = "0.5" // this is good
 x.style.lineHeight = 0.5 // this is bad
 ```
 
-Some browsers might be able to interpret it fine, but the result is unpredictable. Better stay safe!
+Some browsers might be able to interpret it fine, but not all. When in doubt, just use the safer option.
 
 ### Content of Input Elements
 To access the **value** of an input element (like textboxes), the code is just `element.value`.
 ```html
 <input id="inputthing" type="text">Thing is typed here</input>
+
 <script>
 console.log(document.getElementById("inputthing").value)
 </script>
@@ -91,7 +92,7 @@ console.log(document.getElementById("inputthing").value)
 This will also work for other types of input like checkboxes, and also for `<option>` of a `<select>`. [Here](https://www.w3schools.com/html/html_form_input_types.asp)is the reference page for input types, and [here](https://www.w3schools.com/tags/tag_select.asp) is for selectable. 
 
 ### Other Attributes
-Attributes are those things you put inside the tag like `src` and `href` and `id`. Some attributes, like `value` and `style` can be accessed like I showed you above. Another attribute you can access directly is `class`, which you can access with `element.className`. 
+Attributes are those things you put inside the tag e.g. `src` or `href` or `id`. Some attributes, like `value` and `style`, can be accessed like I showed you above. Another attribute you can access directly is `class`, which you can access with `element.className`. 
 
 For everything else, use the `getAttribute()` function.
 
@@ -101,10 +102,10 @@ For everything else, use the `getAttribute()` function.
 
 ```js
 var x = document.getElementById('my-link')
-console.log(x.getAttribute('id'))
+console.log(x.getAttribute('href'))
 ```
 
-This will output `my-link`.
+This will output `http://github.com`.
 
 To change the value of that attribute, use the `setAttribute()` function.
 
