@@ -19,3 +19,5 @@ This guide is here to help you with that.
 * If your only knowledge of JavaScript is through jQuery or other libraries, this is a good intro to what goes on *behind* those libraries.
 
 * This guide assumes that you use standard-compliant modern browsers (you most likely are). There's nothing cutting-edge here since it just teaches the basic, but things will fail spectacularly if you still use, say, Internet Explorer. 
+
+* This guide only teaches you front-end web development. If you don't know what that means, read on.

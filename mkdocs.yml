@@ -16,5 +16,6 @@ nav:
     - Appendix:
         - "Which part of this is no-nonsense anyway?": "whatnononsense.md"
         - "Really Quick Guide to Programming with JavaScript": 'js-quickguide.md'
+        - "Keeping Your Code Clean": 'cleancode.md'
         - "Guestbook": 'guestbook.md'
     

@@ -3,14 +3,14 @@ For now, at least! If you've read and understood everything in this guide, you s
 
 Don't worry if you don't get everything yet. It takes a while for coding to become second nature. Get practising. Get googling if you get stuck. Read up. Practice some more. This guide is just meant to shamelessly throw the basic at you. Whether it'll be useful or not depends on you!
 
-But! If there's any part of this guide that you think is genuinely confusing or misleading or if you've been staring at it for far too long and you still don't get it, feel free to pop in some questions in the [guestbook](guestbook.md). I'm just a rando on the internet who wants to share some knowledge. I'll be happy if you can help me do that! 
+But! If there's any part of this guide that you think is genuinely confusing or misleading or if you've been staring at it for far too long and you still don't get it, feel free to pop in some questions in the [guestbook](guestbook.md). I'm just a rando on the internet who wants to share some knowledge. I'll be happy if you can help me do that. 
 
 ## So what's next?
 The JavaScript landscape is wild. What this guide taught you is (hopefully) something that will probably still be applicable for a long time, but truth is, JavaScript is an ever-shifting landscape with new standards every couple of years.
 
 By the time of this guide's writing, a good next step if you've mastered basic JavaScript for front-end development is to learn frameworks like [React](https://reactjs.org/) or [Vue](https://vuejs.org/), both as in the frameworks themselves and also how to set them up. Through learning that, you'll probably get roped into the other essentials: NPM, Webpack, REST API, et cetera et cetera.
 
-Or maybe you'll realise that front-end web development is a hellscape that you don't want to delve into too deeply. In which case maybe you can take a gander at back-end web development. Python and Ruby are pretty good beginner-friendly languages for that.
+Or maybe you'll realise that front-end web development is a hellscape that you don't want to delve into too deeply. In which case maybe you can take a gander at back-end web development. Python and Ruby are pretty good beginner-friendly languages for that. Or if you already like JavaScript as a programming language, a version of it called Node.js can be used for the back-end.
 
 Whatever you decide to do, I wish you luck and strength. Software development can be frustrating and time-consuming, but with effort and perseverance, anyone can do it.
 
