@@ -5,7 +5,7 @@ You don't have to *memorize* all this, obviously. You also don't really have to 
 
 To try out the codes yourself, open the Developer Tools on your browser (usually by pressing F12) and open the **console**. In modern browsers, you can just copy and paste a whole block of codes instead of having to put the line in one by one. I highly suggest doing this and experimenting yourself if you're confused.
 
-### Most Basic
+## Most Basic
 JavaScript has five data types: string, number, boolean, array, object. [This page](https://www.w3schools.com/js/js_datatypes.asp) has neat explanations of all of them)
 
 `console.log()` will print text to the console.
@@ -14,7 +14,7 @@ JavaScript has five data types: string, number, boolean, array, object. [This pa
 
 `var x = "Ten"` create a variable `x` with the value `"Ten"`, a string. You can also use single quote (`'`) instead of double quote (`"`).
 
-Alternatively, you can use `const` instead of `var`, if it's a constant (i.e., it doesn't change). You can also use `let` instead of `var`, which will be scoped to the current block (don't worry if you don't get that yet).  
+Alternatively, you can use `const` instead of `var`, if it's a constant (i.e., it doesn't change). You can also use `let` instead of `var`, which will be scoped to the current block (don't worry if you don't get that yet). To avoid errors, it's usually recommended to use `let` over `var`.  
 
 `x = 1 + 1` change the value of the variable `x` to `1 + 1`, which is `2`. **`x` should already be defined!**
 
@@ -27,9 +27,9 @@ console.log(greeting)
 ```
 The above code will print out "Hello World".
 
-In the old days we have to end every line with a semicolon (`;`). Modern JavaScript don't require that anymore, but some old-timers might still insist on using them. Do whatever you like, as long as it's consistent.
+In the old days we have to end every line with a semicolon (`;`). Modern JavaScript don't require that anymore, but some people might still insist on using them. Do whatever you like, as long as it's consistent.
 
-### Logic
+## Logic
 The notation for **AND** is `&&`. The notation for **OR** is `||`.
 
 The two booleans are `true` and `false`.
@@ -99,7 +99,7 @@ switch(favFood) {
 
 To check if two data are equal, use `===`.
 
-```
+```js
 var favFood = 'beef' 
 if (favFood === 'fish') {
 	giveFish()
@@ -111,7 +111,7 @@ To check if two data are not equal, use `!==`. To check if a number is bigger, u
 
 [This page](https://www.w3schools.com/js/js_comparisons.asp) has a table containing these comparison operators.
 
-### Arrays and Objects
+## Arrays and Objects
 An array is a like a list of data. Order in an array is important.
 
 `[]` is an empty array.
@@ -134,7 +134,7 @@ var person = {
 }
 ``` 
 
-You can access an element in an object like this: ** *object*['*key*']**. With the above's `person` object, `person['age']` will yield `20`. Note that the key is always a string. Another way to access it is through ** *object*.*key* **. So with the above object `person.name` will yield `"Ann"`. Note that the key isn't a string here.
+You can access an element in an object like this: ** *object*['*key*']**. With the above's `person` object, `person['age']` will yield `20`. Note that the key is always a string. Another way to access it is through ** *object*.*key* **. So with the above object, `person.name` will yield `"Ann"`.
 
 ## Loops
 
@@ -162,7 +162,7 @@ Done!
 
 Another loop you can use is **for**. 
 
-To loop through an array, the structure is **for (*x* of *array*) { *things to loop* }**. ***x*** will be the element. For example:
+To loop through an array, the structure is **for (*x* of *array*) { *things to loop* }**. *x* will be the element. For example:
 
 ```js
 const peopleNames = ["Seth", "Franz", "Forde", "Kyle"]
@@ -181,7 +181,7 @@ Forde
 Kyle
 ```
 
-You can also loop through an object with **for (*x* in *object*) { *things to loop* }**. ***x*** will be the key. For example:
+You can also loop through an object with **for (*x* in *object*) { *things to loop* }**. *x* will be the key. For example:
 
 ```js
 var person = {
@@ -207,7 +207,7 @@ My allergy is null
 
 There is also another **for** loop that's more common, but in my opinion not very useful for beginners. You can read up on that [here](https://www.w3schools.com/js/js_loop_for.asp). 
 
-### Functions
+## Functions
 The simplest way to think of a **function** is that it's a set of programming codes that can be repeated over and over again without having to type the entire thing again.
 
 We sometimes say we **run** a function, and sometimes we say we **call** a function. They're basically the same thing, don't worry about it.
@@ -252,7 +252,7 @@ You can treat an anonymous function like you treat any other data types. You can
 ```js
 var doThing = () => { 
 	// insert function here
-})
+}
 ```
 
 A function can **return** something when it is called. Here's an example:
@@ -291,7 +291,7 @@ var count = start || 0
 
 With ** *a* || *b* **, if *a* is falsy (i.e. if it's false, 0, or undefined), the data will be *b*. Otherwise it's *a*.
 
-## That's all here
+# That's all here
 There's plenty more to JavaScript than all of the above, but this should be good enough for anyone starting with the language. 
 
-If you're still confused even after reading this guide and experimenting by yourself, you can head to the [guestbook](guestbook.md) and drop in your questions. I'd be happy to help, or to at least point you to other places that can help.
+If you're still confused even after reading this guide and experimenting by yourself, Google is your friend! Alternatively, you can [contact me](guestbook.md)!

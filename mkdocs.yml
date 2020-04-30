@@ -11,6 +11,7 @@ nav:
         - "Form Shenanigans": 'handling-forms.md'
         - "Animating with Transition": 'transition.md'
         - "Timing": 'timing.md'
+        - "Advanced Elements Manipulation": "get-set-advanced.md"
         - "Frameworks and Libraries": 'frameworks.md'
         - "Afterwords": 'thatsall.md'
     - Appendix:
