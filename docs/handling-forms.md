@@ -1,9 +1,7 @@
 # Form Shenanigans
-I hate forms. Every front-end web developer hates forms. Those who doesn't are just victims of Stockholm Syndrome.
-
 As you should know if you know your HTML, a `<form>` is basically just a collection of `<input>`. The form can then be submitted by either clicking Enter, pressing a `<button>` or pressing a `<input type="submit">`. Some forms transmit the inputted data directly to the server, while some forms process it using JavaScript. Because this guide doesn't deal with things in the back-end, I'm just here to tell you about the latter.
 
-First, if you want to process a form's content with Javascript, remember to use `preventDefault()` as I mentioned before.
+First, by default a form always refresh the page or go to the url in its `action` attribute when you submit it. If you want to process a form's content with Javascript, you should disable this with `preventDefault()` as I mentioned in the previous page.
 
 Each element in the form should have a `name` attribute. You can then access those elements through the parent form with their `name` as key. Look here:
 
@@ -59,7 +57,7 @@ Remember that JavaScript can't have hyphen (-) in its variables! To mitigate for
 
 Using `[]` is generally more recommended, but, really, you can use whichever you want.
 
-If you want to then send the data in the form on its way to the server as usual, use `submit()` on the form element. Don't forget to add the `action` attribute to the form itself.
+After processing the values, if you want to send the data in the form to the server as usual, use `submit()` on the form element. If you do this, don't forget to add the `action` attribute to the form itself.
 
 ```html
 <form name="exampleform" action="/action.php" method="post">

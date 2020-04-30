@@ -1,7 +1,7 @@
 # Getting and Manipulating Elements
 
-### Get
-Basic Javascript on the web can "**get**" a HTML element by using some specific functions. One of them is `getElementById()`. 
+## Get
+Basic JavaScript on the web can "**get**" a HTML element by using some specific functions. One of them is `getElementById()`. 
 
 ```js
 document.getElementById("example")
@@ -9,11 +9,11 @@ document.getElementById("example")
 
 This function will search the entire web page for an element with the **id** `example`. You should already know this when learning HTML: Every id should be unique. Make sure that no two elements have the same id!
 
-You can also use `getElementsByClassName()` and `getElementsByTagName()`. As there can be multiple elements with that class/tag name, these functions will return an array of those elements. 
+You can also use `getElementsByClassName()` `getElementsByTagName()`. As there can be multiple elements with that class/tag name, these functions will return an array of those elements. 
 
 [Read up](js-quickguide.md) if you don't know what an array is. Basically it's like a list of things. You can access the first item in that list with `arrayname[0]`, the second item with `arrayname[1]` and so on.   
 
-### Reading and Changing Content
+## Reading and Changing Content
 Once you've reached the element you want, you can then access and modify its content, CSS styles, or attributes.
 
 To access the content of an element, we use `innerHTML`. For example, take a look at the codes below.
@@ -48,7 +48,7 @@ x = "Hello this text has been modified!"
 
 The reason for that isn't really important right now. But if you're curious, you can google about "passing by reference" and "passing by value".   
 
-### Reading and Changing CSS
+## Reading and Changing CSS
 To access an element's CSS styling, you can use `style`. 
 
 ```js
@@ -79,19 +79,19 @@ x.style.lineHeight = 0.5 // this is bad
 
 Some browsers might be able to interpret it fine, but not all. When in doubt, just use the safer option.
 
-### Content of Input Elements
-To access the **value** of an input element (like textboxes), the code is just `element.value`.
+## Value of Input Elements
+To access the **value** of an input element (like what's typed into textboxes), the code is just `element.value`.
 ```html
-<input id="inputthing" type="text">Thing is typed here</input>
+<input id="inputthing" type="text">
 
 <script>
 console.log(document.getElementById("inputthing").value)
 </script>
 ```
 
-This will also work for other types of input like checkboxes, and also for `<option>` of a `<select>`. [Here](https://www.w3schools.com/html/html_form_input_types.asp)is the reference page for input types, and [here](https://www.w3schools.com/tags/tag_select.asp) is for selectable. 
+This will also work for other types of input like checkboxes, and also for `<option>` of a `<select>`. [Here](https://www.w3schools.com/html/html_form_input_types.asp)is a reference page for input types, and [here](https://www.w3schools.com/tags/tag_select.asp) is a page for selectable. 
 
-### Other Attributes
+## Other Attributes
 Attributes are those things you put inside the tag e.g. `src` or `href` or `id`. Some attributes, like `value` and `style`, can be accessed like I showed you above. Another attribute you can access directly is `class`, which you can access with `element.className`. 
 
 For everything else, use the `getAttribute()` function.

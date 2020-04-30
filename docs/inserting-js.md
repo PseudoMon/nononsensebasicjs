@@ -12,7 +12,7 @@ Unlike the `<link rel="stylesheet">` you use for CSS files, `<script>` always ne
 
 You can put your Javascript anywhere, although by convention, it's usually put either at the `head` or at the bottom of `body`. Javascript in an external file can be treated as if they're copy-pasted to wherever that `<script>` tag is put.
 
-This positioning is important! Javascript will be run before every HTML tags underneath it. This means that if your script references a HTML tag (e.g. to read it, to manipulate it) that's further down in the file, it won't be able to find it; technically that tag hasn't existed yet!
+This positioning is important! JavaScript and HTML are run from the top to the bottom. This means that if your script references a HTML tag (e.g. to read it, to manipulate it) that's further down in the file, it won't be able to find it; technically that tag hasn't existed yet!
 
 ```html
 <script>
@@ -37,7 +37,13 @@ window.onload = () => {
 
 You can just put all your code inside that function, and it won't matter where you insert the script.
 
-You can also use `document.onload` instead of `window.onload`. They do more or less the exact same thing. Feel free to google their difference.
+A caveat: `window.onload` will only run when the entire page is loaded, including all the images and external file. This might cause delays if, say, your images are large. If you just need the HTML tags to load so you can access it in JavaScript, you can use this instead: 
+
+```js
+document.addEventListener('DOMContentLoaded', () => {
+	// codes here will run after the HTML tags are loaded, even before images are loaded
+})
+```
 
 ## Experimenting with JavaScript
 There are many online services that let you try out JavaScript on your browser without having to mess around with files. My personal favourite is [CodePen](https://codepen.io/), but there's also [JSFiddle](https://jsfiddle.net/) and probably others.

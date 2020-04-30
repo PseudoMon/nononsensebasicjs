@@ -106,7 +106,7 @@ Here's the code if you want to try it yourself ([CodePen](https://codepen.io) is
   You typed in <span id="textarea-result"></span></div>
 
 <script>
-  function textboxChanged(box) {
+function textboxChanged(box) {
   var span = document.getElementById('textarea-result')
   span.innerHTML = box.value
 }
@@ -115,12 +115,11 @@ Here's the code if you want to try it yourself ([CodePen](https://codepen.io) is
 
 Don't worry about that `this` and `box` thing yet. I'll go there in a bit.
 
-**Load** is when the page is loaded. You've actually seen it in before when we use `window.onload` to insert Javascript 
-into the page.
+**Load** is when the page is loaded. You've actually seen it in before when we use `window.onload` to insert JavaScript into the page.
 
 **Focus** is when the element is currently selected. When you click on a textbox and you can type into it, or when you click Tab to then highlight a button or a link, that's when those elements are **focused**. When you stop focusing on it, **blur** happens.
 
-**Mouseover** and **mouseout** are when the mouse's cursor hover over or leave the area. But remember that these days, most people browse the internet though their phone using a touchscreen. Mouse events are useless there.
+**Mouseover** and **mouseout** are when the mouse's cursor hover over or leave the area. But remember that these days, most people browse the internet though their phone using a touchscreen. Mouse events don't usually do much here.
 
 **Submit** is when you submit a form. We'll go over that when we talk about Forms later.
 
@@ -161,11 +160,11 @@ function textboxChanged(box) {
 
 In the above example, `this` refers to the textbox element. I then hand that over to the function, renaming it to `box` in the process. Renaming it is just a precaution since `this`  can mean something else here. Feel free to name it whatever else you like.
 
-You can then treat that variable as if we **Get** that element through `getElementById()`. You can access and set everything (`style`, `innerHTML`, attributes) the same way as before.
+You can then treat that variable as if we **Get** that element through, say, `getElementById()`. You can access and set everything (`style`, `innerHTML`, attributes) the same way as before.
 
 (For more about `this`, you can just google "js this". [This W3Schools page](https://www.w3schools.com/js/js_this.asp) has a pretty good explanation.)
 
-## Adding Event Handlers Straight from the Script
+## Adding Event Handlers Within the Script
 In addition to adding an event handler as attributes to the element, you can also add them using the function `addEventListener()`. 
 
 This:

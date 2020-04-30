@@ -18,7 +18,7 @@ You just have to write this:
 $('#button').click(...)
 ```
 
-This simplicity caused jQuery to be so widespread, but it's also packed with so many features that it might be too bloated for your website. If you just want a bit of extra functionalities, basic JavaScript is preferred over including jQuery's entire library. 
+This simplicity caused jQuery to be so widespread, but it's also packed with so many features that it might be too bloated for your website. Modern JavaScript has also incorporated many of the functions that make jQuery so popular, so there's less reason to use it nowadays. If you just want a bit of extra functionalities, basic JavaScript is preferred over including jQuery's entire library. 
 
 There are also other libraries that only add specific functionalities. For example, [Popper.JS](https://popper.js.org/) lets you easily make small pop-ups. There's also [Moment.js](https://momentjs.com/), which helps you in showing and calculating the time.
 
@@ -27,7 +27,7 @@ While you can think of a **library** as a set of new tools that you can use, a *
 
 The Big Three of frontend framework at the moment is [React](https://reactjs.org/), [Vue](https://vuejs.org/), and [Angular](https://angularjs.org/). You can check their websites to see just how different coding with them is.
 
-My personal favourite though, for projects that aren't too large, is [Riot](https://riot.js.org/). It's, imo, easier to use and much closer to basic HTML/CSS/JS while still being useful.
+My personal favourite for projects that aren't too large, is [Riot](https://riot.js.org/). It's, in my opinion, easier to use and much closer to basic HTML/CSS/JS while still being useful.
 
 ## Isn't framework also a library?
 Yes, a framework is also considered library. There's no really clear-cut definition of what's a "framework" and what's not. The definition I use is one version. Other people might also consider jQuery a framework. \*shrugs\*.

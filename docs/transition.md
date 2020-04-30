@@ -52,7 +52,7 @@ function animateBox(e) {
 document.getElementById("colourbox").addEventListener('click', animateBox)
 ```
 
-Note that I put `left: 0` in the CSS. Your element should have default values for every properties that the script will modify. Otherwise, the transition might not work.
+Note that I put `left: 0` in the CSS, even though it doesn't visibly do anything. Your element should have default values for every properties that the script will modify. Otherwise, the transition might not work.
 
 Here's a version where you can toggle between the two colour/positions.
 
@@ -93,6 +93,6 @@ document.getElementById("colourbox2").addEventListener('click', animateBox2)
 
 [Open this CodePen](https://codepen.io/PseudoMon/pen/wvwgpNE) if you want to see the code I used for that. Or you can try making it yourself, and then compare the codes.
 
-I should probably write a proper guide for CSS transition some day, since there's a lot about it that might not be obvious. For now, [here's the W3Schools reference page for transition](https://www.w3schools.com/cssref/css3_pr_transition.asp). Read up.
+I should probably write a proper guide for CSS transition some day, since there's a lot about it that might not be obvious. For now, [here's the W3Schools reference page for transition](https://www.w3schools.com/cssref/css3_pr_transition.asp).
   
 For prettier transitions, you might not want to keep using the embarassingly basic `transition: 1s`. Use [these easing functions](https://easings.net/en).
