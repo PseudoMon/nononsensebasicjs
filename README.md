@@ -1,6 +1,4 @@
 # The No-Nonsense Basic JavaScript Guide for the Novice Web Developer
-This guide is halfway done. I'll put it up to redthedocs when it's done. Not currently accepting revision! I'm just putting this on GitHub as backup for now! Get off my lawn!- 
+A guide to basic JavaScript for people who wants to learn it develop websites, aimed at those fresh off learning HTML/CSS. 
 
-## To-Do
-- Frameworks page
-- The quick guide to programming with js
+It's more or less finished and can be read at [ReadTheDocs](https://nononsensebasicjs.readthedocs.io/).
